@@ -10,20 +10,14 @@ $(function(){
     $('.slick-dots li:nth-child(3) button').text('保証'); 
     $('.slick-dots li:nth-child(4) button').text('革新');
 
+    $(".menu a").on('click', function (e) {
+		e.preventDefault();
+		var id  = $(this).attr('href'),
+			top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 500);
+	});
+
     $('.menu__btn').on('click', function(){
         $('.menu__list').toggleClass('menu__list--active');
     });
-
-    $(".menu a").on('click', function (e) {
-
-		e.preventDefault();
-
-
-		var id  = $(this).attr('href'),
-
-		
-			top = $(id).offset().top;
-		
-		$('body,html').animate({scrollTop: top}, 300);
-	});
 });
