@@ -1,0 +1,106 @@
+$accent: #BF45C5;
+$bgl: #242424;
+
+
+
+
+
+%dm-400 {
+  font-family: 'DM Sans-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%dm-700 {
+  font-family: 'DM Sans-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%rub-400 {
+  font-family: 'Rubik-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%rub-500 {
+  font-family: 'Rubik-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%title {
+  background: linear-gradient(to bottom, #CCCCCC 0%, #EEEEEE 41%, #333333 86%);
+  background-clip: text;
+  color: transparent;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient-glow {
+  0% {
+    box-shadow: 0 0 15px 5px #C74EFC;
+  }
+
+  25% {
+    box-shadow: 0 0 20px 8px #D450FD;
+  }
+
+  50% {
+    box-shadow: 0 0 25px 10px #7C47FC;
+  }
+
+  75% {
+    box-shadow: 0 0 20px 8px #5942FD;
+  }
+
+  100% {
+    box-shadow: 0 0 15px 5px #C74EFC;
+  }
+}
+
+@keyframes neon {
+
+  0%, 25%, 50%, 75%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 6px 3px rgba(213, 159, 237, 1);
+  }
+  20%, 70% {
+    opacity: 0.8;
+    box-shadow: 0 0 4px 2px rgba(213, 159, 237, 0.7);
+  }
+  23%, 73% {
+    opacity: 0.5;
+    box-shadow: 0 0 2px 1px rgba(213, 159, 237, 0.5);
+  }
+  35% {
+    opacity: 0.1; /* Эффект резкого затухания */
+    box-shadow: 0 0 1px 1px rgba(213, 159, 237, 0.2);
+  }
+  80% {
+    opacity: 0.2; /* Внезапное кратковременное мерцание */
+    box-shadow: 0 0 2px 1px rgba(213, 159, 237, 0.3);
+  }
+  85% {
+    opacity: 1; /* Резкое восстановление */
+    box-shadow: 0 0 6px 3px rgba(213, 159, 237, 1);
+  }
+}
+
+
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function max($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
