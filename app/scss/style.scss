@@ -63,7 +63,9 @@
         transition: all .3s;
 
         &:hover {
-            text-shadow: 0 0 7px rgba(213, 159, 237, 1);
+            background-image: linear-gradient(to right, #C74EFC, #D450FD, #7C47FC, #5942FD);
+            background-clip: text;
+            color: transparent;
         }
     }
 }
